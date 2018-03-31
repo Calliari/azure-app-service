@@ -1,4 +1,8 @@
-# gpa-intranet-bbd-provision
+# azure cloud 
+
+Create a file that contains the credentials from azure to be able to conext with Azure cloud services 
+
+
 
 THIS WORKS ON MAC OR LINUX ONLY NOT FOR WINDOWS
 
