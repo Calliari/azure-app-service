@@ -1,0 +1,14 @@
+# ignore all these files and directories
+
+.terraform/*
+terraform.tfstate
+terraform.tfstate.backup
+variables.tf
+
+
+wp-config*
+
+providers.tf
+providers*
+
+notes*
