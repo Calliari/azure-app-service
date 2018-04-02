@@ -4,7 +4,8 @@ Create a file that contains the credentials from azure to be able to conext with
 
 
 
-THIS WORKS ON MAC OR LINUX ONLY NOT FOR WINDOWS
+THIS WORKS ON MAC, LINUX, and WINDOWS
+MUST HAVE AZ-CLI INSTALLED AND TERRAFORM
 
 RESOURCES that wii be created with this infrastructure as code:
 
