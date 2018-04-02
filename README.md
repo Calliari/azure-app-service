@@ -45,6 +45,10 @@ variable "azure-database-servername" {
   description = "Name of the azure resource app service web"
 }
 
+variable "database-name" {
+  default = ""
+  description = "Name of the azure database"
+}
 
 variable "db_credentials" {
   type = "map"
@@ -52,7 +56,6 @@ variable "db_credentials" {
 
   # Map credentials for the database
   default = {
-    db_name = ""
     user = ""
     pass = ""
   }
