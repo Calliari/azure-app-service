@@ -4,7 +4,7 @@ resource "azurerm_app_service" "azure-app-service" {
   name                = "${var.azure-app-service}"
   location            = "${var.azure-location}"
   resource_group_name = "${var.azure-resource-group}"
-  app_service_plan_id = "${var.azure-service-plan}"
+  app_service_plan_id = "${azurerm_app_service_plan.service_plan.id}"
 
   site_config {
     php_version = "7.0"
