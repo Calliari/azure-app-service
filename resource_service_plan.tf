@@ -23,4 +23,5 @@ resource "azurerm_app_service_plan" "service_plan" {
     reserved = true
   }
 
+  depends_on = ["azurerm_resource_group.resource_group"]
 }
