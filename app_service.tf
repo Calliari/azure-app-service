@@ -11,10 +11,23 @@ resource "azurerm_app_service" "azure-app-service" {
   }
 
   app_settings {
+    # * this is passed to wp-config.php file ==> connect to the databases
     "DATABASE" = "${var.database-name}"
     "USER" = "${var.db_credentials["user"]}@${var.db_credentials["user"]}"
     "PASSWORD" = "${var.db_credentials["pass"]}"
     "HOST" = "${var.database-name}.mysql.database.azure.com"
+
+     # * Authentication Unique Keys and Salts.
+
+     "AUTH_KEY" = "${var.db_credentials["auth_key"]}"
+     "SECURE_AUTH_KEY" = "${var.db_credentials["secure_auth_key"]}"
+     "LOGGED_IN_KEY" = "${var.db_credentials["logged_in_key"]}"
+     "NONCE_KEY" = "${var.db_credentials["nonce_key"]}"
+     "AUTH_SALT" = "${var.db_credentials["auth_salt"]}"
+     "SECURE_AUTH_SALT" = "${var.db_credentials["secure_auth_salt"]}"
+     "LOGGED_IN_SALT" = "${var.db_credentials["logged_in_salt"]}"
+     "NONCE_SALT" = "${var.db_credentials["nonce_salt"]}"
+
   }
 
   connection_string {

@@ -6,7 +6,7 @@ terraform.tfstate.backup
 variables.tf
 
 
-wp-config*
+
 
 providers.tf
 providers*
